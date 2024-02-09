@@ -78,5 +78,8 @@
       "npm run lint",
       "npm run test"
     ]
+  },
+  "dependencies": {
+    "react-feather": "^2.0.10"
   }
 }
