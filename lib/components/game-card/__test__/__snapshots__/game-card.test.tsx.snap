@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GameCard component > GameCard should render correctly 1`] = `
+<div>
+  <div
+    class="tia-aspect-[2.5/3.5] tia-bg-white tia-w-full tia-rounded-xl md:tia-m-2 tia-flex tia-flex-col md:tia-text-2xl tia-p-1 md:tia-p-4 tia-border-black tia-shadow-md tia-transition-transform tia-duration-500 tia-transform tia-origin-center tia-rotate-180"
+    data-testid="tia-game-card"
+  >
+    <div
+      class="before:tia-content-card-suit-spades tia-text-grey-900 tia-h-2 md:tia-h-12"
+    >
+      14
+    </div>
+    <div
+      class="tia-flex-1 tia-flex tia-items-center"
+    >
+      <div
+        class="tia-flex tia-flex-col tia-items-center md:tia-text-4xl tia-w-full"
+      >
+        <div
+          class="before:tia-content-card-suit-spades tia-text-grey-900"
+        />
+      </div>
+    </div>
+    <div
+      class="before:tia-content-card-suit-spades tia-text-grey-900 tia-h-2 md:tia-h-12 tia-flex tia-items-end tia-justify-end"
+    >
+      14
+    </div>
+    <div
+      class="tia-absolute tia-inset-0 tia-rounded-xl tia-h-full tia-bg-gradient-to-br tia-to-primary-500 tia-from-primary-200 tia-bg-no-repeat tia-bg-cover tia-transform-opacity tia-duration-500 tia-opacity-100"
+    />
+  </div>
+</div>
+`;

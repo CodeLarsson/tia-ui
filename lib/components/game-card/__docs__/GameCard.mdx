@@ -1,0 +1,39 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Example from './Example.tsx';
+import * as GameCard from './GameCard.stories.tsx';
+
+<Meta of={GameCard} title="GameCard" />
+
+# GameCard
+
+Game Card, a component that represents one of 52 cards in a playing deck
+
+#### Example
+
+<Canvas of={GameCard.AceOfSpades} />
+
+## Usage
+
+```ts
+import {GameCard, CardValue, CardSuite} from "tia-ui";
+
+const Example = () => {
+  return (
+      <GameCard
+        value={CardValue.Ace}
+        suite=(CardSuite.Spades)
+        isFlipped=(false)
+        isFlippbable=(true)
+      />
+  );
+};
+
+export default Example;
+```
+
+#### Arguments
+
+- **value** - `CardValue` enum value
+- **suite** - `CardSuite` enum value
+- **isFlipped** - `bool`, if card is flipped or not
+- **isFlippbable** - `bool`if card can be flipped or not

@@ -1,0 +1,37 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Example from './Example.tsx';
+import * as Icon from './Icon.stories.tsx';
+
+<Meta of={Icon} title="Icon" />
+
+# Icon
+
+Icon component that uses [feather icons](https://feathericons.com/)
+
+#### Example
+
+<Canvas of={Icon.Activity} />
+
+## Usage
+
+```ts
+import {Icon} from "tia-ui";
+
+const Example = () => {
+  return (
+      <Icon
+        name="Activity"
+        color="green"
+        size=48
+      />
+  );
+};
+
+export default Example;
+```
+
+#### Arguments
+
+- **name** - Name of the icon to use, see [feather icons](https://feathericons.com/)
+- **color** - CSS color of icon, defaults to 'currentColor'
+- **size** - `number`, defaults to 24

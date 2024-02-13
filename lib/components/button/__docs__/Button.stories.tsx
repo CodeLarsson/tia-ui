@@ -28,3 +28,23 @@ export const Secondary: Story = {
     onClick: () => console.log('Button')
   }
 };
+
+export const DisabledPrimary: Story = {
+  args: {
+    text: 'Button ',
+    primary: true,
+    disabled: true,
+    size: 'small',
+    onClick: () => console.log('Button')
+  }
+};
+
+export const DisabledSecondary: Story = {
+  args: {
+    text: 'Button ',
+    primary: false,
+    disabled: true,
+    size: 'small',
+    onClick: () => console.log('Button')
+  }
+};

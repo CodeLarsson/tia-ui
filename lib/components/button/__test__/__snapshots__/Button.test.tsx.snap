@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button component > Button should match snapshot 1`] = `
+<div>
+  <button
+    class="tia-text-md tia-px-6 tia-py-3 tia-rounded-full tia-border tia-bg-white tia-text-primary-500 tia-border-primary-500 tia-shadow-sm tia-cursor-pointer hover:tia-bg-primary-50 hover:tia-shadow-md transform transition-transform hover:tia-scale-105 "
+    type="button"
+  />
+</div>
+`;
