@@ -1,6 +1,9 @@
 #storybook build directory
 storybook-static
 
+#example app
+app
+
 # Logs
 logs
 *.log
@@ -138,7 +141,7 @@ dist
 .LSOverride
 
 # Icon must end with two \r
-Icon
+#Icon
 
 
 # Thumbnails

@@ -1,0 +1,35 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Example from './Example.tsx';
+import * as Card from './Card.stories.tsx';
+
+<Meta of={Card} title="Card" />
+
+# Card
+
+Card component with different props.
+
+#### Example
+
+<Canvas of={Card.Elevated} />
+
+## Usage
+
+```ts
+import {Card} from "tia-ui";
+
+const Example = () => {
+  return (
+      <Card
+        type="elevated",
+        title="Elevated Card"
+        icon={() => <Icon name="User" />}
+      />
+  );
+};
+
+export default Example;
+```
+
+#### Arguments
+
+- **type** - Type of card, valid values are 'elevated' | 'outlined' | 'filled', default value is 'elevated'

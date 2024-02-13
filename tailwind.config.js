@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+import { theme } from './tailwind.theme.js';
 export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    '!./lib/**/__test__/**/*.test.*',
+    '!./lib/**/__docs__/**/Example.*',
+    '!./lib/**/__docs__/**/*.stories.*',
+    './lib/**/*.{js,jsx,ts,tsx}'
+  ],
   theme: {
-    extend: {}
+    extend: {
+      ...theme
+    }
   },
   plugins: [],
   prefix: 'tia-',
