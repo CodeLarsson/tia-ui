@@ -1,6 +1,6 @@
 import React from 'react';
 import Card, { CardProps } from '../Card';
-import { Icon } from '../../icon';
+import Icon from '../../icon/icon';
 
 const icon = () => <Icon name="User" />;
 const Example = ({

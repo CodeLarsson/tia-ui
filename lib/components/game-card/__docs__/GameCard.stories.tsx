@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Example from './Example';
-import { CardValue, CardSuite } from '../game-card';
+import { CardValue, CardSuite } from '../game-card.enums';
 
 const meta: Meta<typeof Example> = {
   title: 'Game Card',

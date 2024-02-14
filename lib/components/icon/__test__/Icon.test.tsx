@@ -1,4 +1,3 @@
-//Card/__test__/Card.test.tsx
 import React from 'react';
 import { describe, expect, vi, it } from 'vitest';
 import { render } from '@testing-library/react';

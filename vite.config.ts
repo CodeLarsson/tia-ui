@@ -13,7 +13,7 @@ export default defineConfig({
       fileName: 'tia-ui' // Generates the output file name based on the format.
     },
     rollupOptions: {
-      external: ['react', 'react-jsx-runtime', 'tailwindcss']
+      external: ['react', 'react-jsx-runtime', 'tailwindcss', 'react-feather']
     },
     sourcemap: true, // Generates source maps for debugging.
     emptyOutDir: true // Clears the output directory before building.

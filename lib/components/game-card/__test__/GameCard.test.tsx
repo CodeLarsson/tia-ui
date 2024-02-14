@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import GameCard from '../game-card';
-import { CardSuite, CardValue } from '../game-card';
+import { CardSuite, CardValue } from '../game-card.enums';
 
 describe('GameCard component', () => {
   it('GameCard should render correctly', () => {

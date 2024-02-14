@@ -1,0 +1,45 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Example from './Example.tsx';
+import * as InputField from './InputField.stories.tsx';
+
+<Meta of={InputField} title="Button" />
+
+# InputField
+
+InputField component
+
+#### Example
+
+<Canvas of={InputField.Medium} />
+
+## Usage
+
+```ts
+import {InputField} from "tia-ui";
+
+const Example = () => {
+  return (
+      <InputField
+        label={"Label"}
+        size={"medium"}
+        value={"Value"}
+        placeholder=("Placeholder")
+        onChange={(v) => onChange(v)}
+        id={id}
+        disabled={disabled}
+      />
+  );
+};
+
+export default Example;
+```
+
+#### Arguments
+
+- **label** - `string`, the label of the input element
+- **size** - A string with one of three possible values: "small," "medium," or "large." It defines the size or dimensions of the input field.
+- **id** - `string`, the id of the DOM element, if none provided, a random generated id will be provided.
+- **disabled** - `boolean` indicating whether the field should be disabled or not.
+- **value** - `string`, the value of the input
+- **placholder** - `string`, the placholder value of the input
+- **onChange** _`(value: string) => void`_ - A function that is called when the field is changed. It receives the value of the field as `string`
