@@ -58,7 +58,7 @@ const GameCard = ({
   return (
     <div
       data-testid="tia-game-card"
-      className={`tia-aspect-[2.5/3.5] tia-bg-white tia-w-full tia-rounded-xl md:tia-m-2 tia-flex tia-flex-col md:tia-text-2xl tia-p-1 md:tia-p-4 tia-border-black tia-shadow-md tia-transition-transform tia-duration-500 tia-transform tia-origin-center ${frontUp ? 'tia-rotate-0' : 'tia-rotate-180'} ${!isFlippable ? 'tia-pointer-events-none' : 'tia-cursor-pointer'}`}
+      className={`tia-aspect-[2.5/3.5] tia-bg-white tia-w-full tia-rounded-xl md:tia-m-2 tia-flex tia-flex-col md:tia-text-2xl tia-p-1 md:tia-p-4 tia-border tia-border-primary-700 tia-border-solid tia-shadow-lg tia-transition-transform tia-duration-500 tia-transform tia-origin-center ${frontUp ? 'tia-rotate-0' : 'tia-rotate-180'} ${!isFlippable ? 'tia-pointer-events-none' : 'tia-cursor-pointer'}`}
       onClick={() => flipCard()}
     >
       <div className={`${suiteCssClass} tia-h-2 md:tia-h-12`}>

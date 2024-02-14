@@ -20,7 +20,7 @@ const Button = ({
   const mediumStyles = 'tia-text-md tia-px-6 tia-py-3';
   const largeStyles = 'tia-text-base tia-px-6 tia-py-4';
 
-  const baseBtnStyles = `tia-rounded-full tia-border ${
+  const baseBtnStyles = `tia-rounded-full tia-border tia-border-solid ${
     primary
       ? 'tia-bg-primary-500 tia-text-white tia-border-primary-700 tia-shadow-md'
       : 'tia-bg-white tia-text-primary-500 tia-border-primary-500 tia-shadow-sm'

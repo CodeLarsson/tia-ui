@@ -15,9 +15,11 @@ const Card = ({
   const baseCardStyles = `tia-p-6 tia-max-w-sm tia-rounded-xl tia-space-y-2 tia-text-gray-800"`;
 
   const cardStyles = {
-    elevated: 'tia-bg-primary tia-shadow-lg',
-    outlined: 'tia-border-4 tia-border-primary-900',
-    filled: 'tia-bg-primary-100'
+    elevated:
+      'tia-bg-primary tia-shadow-xl tia-border tia-border-solid tia-border-primary-200',
+    outlined: 'tia-border tia-border-primary-900 tia-border-solid',
+    filled:
+      'tia-bg-primary-100 tia-border tia-border-solid tia-border-primary-200'
   };
 
   return (
