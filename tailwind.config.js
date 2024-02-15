@@ -16,6 +16,6 @@ export default {
   prefix: 'tia-',
   jit: true,
   corePlugins: {
-    preflight: false
+    preflight: true
   }
 };

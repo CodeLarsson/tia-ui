@@ -3,7 +3,7 @@
 exports[`Card component > Card should match snapshot 1`] = `
 <div>
   <div
-    class="tia-p-6 tia-max-w-sm tia-rounded-xl tia-space-y-2 tia-text-gray-800" tia-bg-primary tia-shadow-lg"
+    class="tia-p-6 tia-rounded-xl tia-space-y-2 tia-text-gray-800" tia-bg-primary tia-shadow-xl tia-border tia-border-solid tia-border-primary-200"
     role="region"
   >
     <div

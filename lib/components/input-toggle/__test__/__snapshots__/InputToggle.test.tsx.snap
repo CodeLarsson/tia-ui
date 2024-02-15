@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InputToggle component > Input toggle should match snapshot - primary 1`] = `
+<div>
+  <div
+    class="tia-flex tia-flex-col"
+  >
+    <label
+      class="tia-font-semibold tia-mx-2 tia-my-1 tia-text-gray-900 tia-text-md"
+      for="test"
+    >
+      Test
+    </label>
+    <div
+      aria-checked="false"
+      class="tia-bg-primary-500 tia-relative tia-flex tia-items-center tia-rounded-full tia-w-medium tia-h-medium "
+      role="switch"
+    >
+      <div
+        class="tia-absolute tia-left-[2px] tia-outline-none tia-transform tia-transition-transform tia-duration-200 tia-rounded-full tia-cursor-pointer tia-bg-primary-50 focus:tia-bg-primary-200 tia-w-[2.5rem] tia-h-[2.5rem]  "
+        id="test-toggle-button"
+        tabindex="0"
+      />
+      <input
+        aria-label="Test"
+        class="tia-hidden"
+        id="test"
+        readonly=""
+        type="checkbox"
+        value="false"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InputToggle component > Input toggle should match snapshot - secondary 1`] = `
+<div>
+  <div
+    class="tia-flex tia-flex-col"
+  >
+    <label
+      class="tia-font-semibold tia-mx-2 tia-my-1 tia-text-gray-900 tia-text-md"
+      for="test"
+    >
+      Test
+    </label>
+    <div
+      aria-checked="false"
+      class="tia-bg-white tia-border tia-border-primary-500 tia-border-solid tia-relative tia-flex tia-items-center tia-rounded-full tia-w-medium tia-h-medium "
+      role="switch"
+    >
+      <div
+        class="tia-absolute tia-left-[2px] tia-outline-none tia-transform tia-transition-transform tia-duration-200 tia-rounded-full tia-cursor-pointer tia-bg-primary-500 focus:tia-bg-primary-300 tia-w-[2.5rem] tia-h-[2.5rem]  "
+        id="test-toggle-button"
+        tabindex="0"
+      />
+      <input
+        aria-label="Test"
+        class="tia-hidden"
+        id="test"
+        readonly=""
+        type="checkbox"
+        value="false"
+      />
+    </div>
+  </div>
+</div>
+`;

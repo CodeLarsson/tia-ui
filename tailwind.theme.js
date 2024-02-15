@@ -8,7 +8,16 @@ export const theme = {
     'card-suit-clubs': '"\\2663"',
     'card-suit-spades': '"\\2660"'
   },
-
+  height: {
+    small: '2rem',
+    medium: '2.75rem',
+    large: '3.5rem'
+  },
+  width: {
+    small: '4rem',
+    medium: '5.5rem',
+    large: '7rem'
+  },
   colors: {
     primary: {
       50: '#fdf9e9',

@@ -1,0 +1,47 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Example from './Example.tsx';
+import * as InputToggle from './InputToggle.stories.tsx';
+
+<Meta of={InputToggle} title="InputToggle" />
+
+# InputField
+
+InputField component
+
+#### Example
+
+<Canvas of={InputToggle.PrimaryMedium} />
+
+## Usage
+
+```ts
+import {InputToggle} from "tia-ui";
+
+const Example = () => {
+  return (
+      <InputToggle
+        label={"Label"}
+        displayLabel={false}
+        size={"medium"}
+        type={"primary"}
+        checked={false}
+        onChange={(v) => onChange(v)}
+        id={id}
+        disabled={disabled}
+      />
+  );
+};
+
+export default Example;
+```
+
+#### Arguments
+
+- **label** - `string`, the label of the input element
+- **size** - A string with one of three possible values: "small," "medium," or "large." It defines the size or dimensions of the input field.
+- **id** - `string`, the id of the DOM element, if none provided, a random generated id will be provided.
+- **disabled** - `boolean` indicating whether the field should be disabled or not.
+- **checked** - `boolean`, if the toggle is toggled or not
+- **displayLabel** - `boolean`, controls if the label should be displayed or not
+- **onChange** _`(value: boolean) => void`_
+- **type** - `string`, "primary" or "secondary"

@@ -11,18 +11,18 @@ export type ButtonProps = {
 const Button = ({
   disabled,
   onClick,
-  primary,
-  size,
+  primary = true,
+  size = 'medium',
   text,
   ...props
 }: ButtonProps) => {
-  const smallStyles = 'tia-text-xs tia-px-3 tia-py-2';
-  const mediumStyles = 'tia-text-md tia-px-6 tia-py-3';
-  const largeStyles = 'tia-text-base tia-px-6 tia-py-4';
+  const smallStyles = 'tia-text-xs tia-h-small';
+  const mediumStyles = 'tia-text-md tia-h-medium';
+  const largeStyles = 'tia-text-base tia-h-large';
 
-  const baseBtnStyles = `tia-rounded-full tia-border tia-border-solid ${
+  const baseBtnStyles = `tia-px-4 tia-rounded-full tia-border tia-border-solid ${
     primary
-      ? 'tia-bg-primary-500 tia-text-white tia-border-primary-700 tia-shadow-md'
+      ? 'tia-bg-primary-500 tia-text-white tia-border-primary-600 tia-shadow-md'
       : 'tia-bg-white tia-text-primary-500 tia-border-primary-500 tia-shadow-sm'
   }`;
 
@@ -32,7 +32,7 @@ const Button = ({
       : 'hover:tia-bg-primary-50 hover:tia-shadow-md transform transition-transform hover:tia-scale-105'
   }`;
 
-  const disabledBtnStyles = 'tia-opacity-50';
+  const disabledBtnStyles = 'tia-opacity-50 tia-pointer-events-none';
 
   const btnStyles = {
     small: `${smallStyles} ${baseBtnStyles} ${disabled ? disabledBtnStyles : enabledStyles}`,
@@ -47,7 +47,7 @@ const Button = ({
       disabled={disabled}
       aria-disabled={disabled}
       {...props}
-      className={`${btnStyles[size ?? 'medium']} ${disabled ? disabledBtnStyles : ''}`}
+      className={`${btnStyles[size]} ${disabled ? disabledBtnStyles : ''}`}
     >
       {text}
     </button>

@@ -12,7 +12,7 @@ const Card = ({
   CardIcon,
   children
 }: PropsWithChildren<CardProps>) => {
-  const baseCardStyles = `tia-p-6 tia-max-w-sm tia-rounded-xl tia-space-y-2 tia-text-gray-800"`;
+  const baseCardStyles = `tia-p-6 tia-rounded-xl tia-space-y-2 tia-text-gray-800"`;
 
   const cardStyles = {
     elevated:

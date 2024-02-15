@@ -19,7 +19,7 @@ describe('Card component', () => {
     const card = screen.getByRole('region');
 
     // Assert
-    expect(card.classList).toContain('tia-shadow-lg');
+    expect(card.classList).toContain('tia-shadow-xl');
   });
 
   it('Card should match snapshot', () => {

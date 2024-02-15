@@ -3,7 +3,7 @@
 exports[`Button component > Button should match snapshot 1`] = `
 <div>
   <button
-    class="tia-text-md tia-px-6 tia-py-3 tia-rounded-full tia-border tia-bg-white tia-text-primary-500 tia-border-primary-500 tia-shadow-sm tia-cursor-pointer hover:tia-bg-primary-50 hover:tia-shadow-md transform transition-transform hover:tia-scale-105 "
+    class="tia-text-md tia-h-medium tia-px-4 tia-rounded-full tia-border tia-border-solid tia-bg-primary-500 tia-text-white tia-border-primary-600 tia-shadow-md tia-cursor-pointer hover:tia-bg-primary-600 hover:tia-shadow-lg transform transition-transform hover:tia-scale-105 "
     type="button"
   />
 </div>

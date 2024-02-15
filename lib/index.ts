@@ -13,10 +13,13 @@ const GameCard = React.lazy(() => import('./components/game-card/game-card'));
 const InputField = React.lazy(
   () => import('./components/input-field/input-field')
 );
+const InputToggle = React.lazy(
+  () => import('./components/input-toggle/input-toggle')
+);
 
 // Types and enums
 export { CardSuite } from './components/game-card/game-card.enums';
 export { CardValue } from './components/game-card/game-card.enums';
 
 // Exports
-export { Button, Card, Icon, GameCard, InputField };
+export { Button, Card, Icon, GameCard, InputField, InputToggle };

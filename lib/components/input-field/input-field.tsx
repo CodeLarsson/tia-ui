@@ -1,4 +1,4 @@
-import { ChangeEvent } from 'react';
+import { ChangeEvent, useEffect, useRef } from 'react';
 import { generateDomID } from '../../utils';
 
 export type InputFieldProps = {
@@ -9,6 +9,7 @@ export type InputFieldProps = {
   onChange?: (value: string) => void;
   size?: 'small' | 'medium' | 'large';
   disabled?: boolean;
+  inputRef?: React.RefObject<HTMLInputElement>;
 };
 
 const InputField = ({
@@ -19,8 +20,18 @@ const InputField = ({
   placeholder,
   size = 'medium',
   disabled = false,
+  inputRef,
   ...props
 }: InputFieldProps) => {
+  const inputElementRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (inputElementRef.current && inputRef) {
+      (inputRef as React.MutableRefObject<HTMLInputElement>).current =
+        inputElementRef.current;
+    }
+  }, [inputElementRef, inputRef]);
+
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     onChange?.(event.target.value);
   };
@@ -59,6 +70,7 @@ const InputField = ({
         {label}
       </label>
       <input
+        ref={inputElementRef}
         value={value}
         className={`${disabled ? disabledCssClasses[size] : ''} ${sizeClassesInput[size]}`}
         id={id}
@@ -71,4 +83,5 @@ const InputField = ({
   );
 };
 
+InputField.displayName = 'InputField';
 export default InputField;
